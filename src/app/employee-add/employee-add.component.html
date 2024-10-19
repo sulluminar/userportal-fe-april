@@ -1,0 +1,35 @@
+<div class="d-flex">
+    <app-side-bar></app-side-bar>
+    <div class="d-flex w-100 justify-content-center align-items-center flex-column p-3">
+        <h3 style="color: #2a7474;">ADD NEW EMPLOYEE</h3>
+        <form class="border rounded p-5 shadow mt-5 w-50" (ngSubmit)="addEmployee()">
+            <input type="text" class="form-control mt-3"
+            [(ngModel)]="employee.id"
+            name="empid"
+            placeholder="Employee Id">
+            <input type="text" class="form-control mt-3" 
+            [(ngModel)]="employee.email"
+            name="empemail"
+            placeholder="Email">
+            <input type="text" class="form-control mt-3" 
+            [(ngModel)]="employee.username"
+            name="empname"
+            placeholder="Username">
+            <div class="form-floating mt-3">
+                <select class="form-select" id="floatingSelect"
+                [(ngModel)]="employee.status"
+                name="empstatus"
+                aria-label="Floating label select example">
+                    <option value="1">ACTIVE</option>
+                    <option value="0">INACTIVE</option>
+                </select>
+                <label for="floatingSelect">Student Status</label>
+            </div>
+            <div class="d-flex mt-3">
+                <button class="btn btn-warning w-50" (click)="clearFields()">CLEAR</button>
+                <button class="btn btn-success w-50 ms-3" type="submit">ADD</button>
+            </div>
+
+        </form>
+    </div>
+</div>

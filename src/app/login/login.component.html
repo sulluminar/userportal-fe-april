@@ -1,0 +1,16 @@
+<div class="row w-100 mt-5 d-flex justify-content-center align-items-center" style="height: 70vh;">
+    <div class="col-md-1"></div>
+    <div class="col-md-5">
+        <img src="https://learningzila.com/wp-content/uploads/2023/07/istockphoto-1281150061-612x612-1.jpg"
+            height="400px" alt="">
+    </div>
+    <div class="col-md-5">
+        <form class="mt-3 border shadow p-3 rounded w-75" (ngSubmit)="login()">
+            <h3 class="text-center" style="color:#2a7474;">LOGIN</h3>
+            <input type="text" placeholder="Email" class="mt-3 form-control" [(ngModel)]="empEmail" name="email">
+            <br>
+            <input type="password" placeholder="Password" class="mt-2 form-control" [(ngModel)]="empPassword" name="emppassword">
+            <button class="btn btn-primary mt-4 w-100" type="submit">LOGIN</button>
+        </form>
+    </div>
+</div>
