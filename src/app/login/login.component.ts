@@ -28,6 +28,7 @@ export class LoginComponent {
           if (email === this.empEmail && password === this.empPassword) {
             console.log("Admin login success");
             console.log(res);
+            this.adminService.updateSharedData(true)
             sessionStorage.setItem("username",res.username);
             sessionStorage.setItem("pwd",res.password)
             Swal.fire({

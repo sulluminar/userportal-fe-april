@@ -20,6 +20,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatNativeDateModule } from '@angular/material/core';
 import { ChartsComponent } from './charts/charts.component';
 import { HighchartsChartModule } from 'highcharts-angular';
+import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { HighchartsChartModule } from 'highcharts-angular';
     EmployeeEditComponent,
     SideBarComponent,
     SearchPipe,
-    ChartsComponent
+    ChartsComponent,
+    NoPageFoundComponent
   ],
   imports: [
     BrowserModule,
